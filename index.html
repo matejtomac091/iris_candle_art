@@ -1,96 +1,325 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html lang="hr" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>IRIS CANDLE ART | Mirisi koji oblikuju trenutke</title>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- AOS Animations CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#72564c",
+                "secondary": "#775a19",
+                "surface": "#fbf9f8",
+                "on-surface": "#1b1c1c"
+              },
+              fontFamily: {
+                "headline": ["Noto Serif"],
+                "body": ["Manrope"]
+              }
+            },
+          }
+        }
+    </script>
+    <style>
+        body { font-family: 'Manrope', sans-serif; background-color: #fbf9f8; color: #1b1c1c; overflow-x: hidden; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .primary-gradient { background: linear-gradient(135deg, #8d6e63 0%, #72564c 100%); }
+        .glass-header { background: rgba(251, 249, 248, 0.8); backdrop-filter: blur(20px); }
+        .product-hover img { transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-hover:hover img { transform: scale(1.08); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface">
+
+<!-- Navigacija -->
+<header class="fixed top-0 w-full z-50 glass-header border-b border-stone-200/50">
+    <nav class="flex justify-between items-center w-full px-6 md:px-12 py-5 max-w-screen-2xl mx-auto">
+        <div class="text-xl md:text-2xl font-serif tracking-tighter text-stone-900 uppercase">
+            IRIS CANDLE ART
+        </div>
+        <div class="hidden md:flex items-center space-x-10">
+            <a class="text-stone-900 hover:text-primary transition-colors font-semibold uppercase tracking-widest text-[10px]" href="#kolekcije">Kolekcije</a>
+            <a class="text-stone-500 hover:text-stone-900 transition-colors font-semibold uppercase tracking-widest text-[10px]" href="#o-nama">Naša Priča</a>
+            <a class="text-stone-500 hover:text-stone-900 transition-colors font-semibold uppercase tracking-widest text-[10px]" href="#proces">Proces Izrade</a>
+            <a class="text-stone-500 hover:text-stone-900 transition-colors font-semibold uppercase tracking-widest text-[10px]" href="#kontakt">Kontakt</a>
+        </div>
+        <div class="flex items-center space-x-6">
+            <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">search</span>
+            <button class="bg-primary text-white px-6 py-2 rounded-full text-[10px] uppercase font-bold tracking-widest hover:opacity-90 transition-all shadow-md">Upit</button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Nova slika: Atmosferična svijeća -->
+            <img alt="Iris Candle Art Hero" class="w-full h-full object-cover brightness-[0.7] scale-105" src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&q=80&w=2000"/>
+            <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+        <div class="relative z-10 text-center text-white px-6" data-aos="zoom-out" data-aos-duration="2000">
+            <span class="block uppercase tracking-[0.5em] text-xs mb-4 text-stone-200">Ručni rad iz Našica</span>
+            <h1 class="font-serif text-5xl md:text-8xl leading-[1.1] mb-8 max-w-5xl mx-auto">
+                Mirisi koji oblikuju <br/><span class="italic opacity-90">vaše trenutke</span>
+            </h1>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center mt-12">
+                <a href="#kolekcije" class="primary-gradient px-12 py-5 rounded-full text-xs font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl">
+                    Pogledaj kolekciju
+                </a>
+                <a href="#kontakt" class="bg-white/10 backdrop-blur-md border border-white/30 px-12 py-5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white/20 transition-all">
+                    Zatraži katalog
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- O nama (Naša Priča) -->
+    <section id="o-nama" class="py-32 bg-white">
+        <div class="max-w-screen-2xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="relative" data-aos="fade-right">
+                <!-- Nova slika: Detalj voska -->
+                <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+                    <img alt="Prirodni vosak" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1000&auto=format&fit=crop"/>
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-surface p-4 rounded-3xl shadow-2xl hidden md:block" data-aos="fade-up" data-aos-delay="400">
+                    <img alt="Detalj svijeće" class="w-full h-full object-cover rounded-2xl" src="https://bima-shop.hr/upload/catalog/product/49652/thumb/3850360114216-amb_69ccdf7418221_560x560r.webp"/>
+                </div>
+            </div>
+            <div class="space-y-8" data-aos="fade-left">
+                <h4 class="text-secondary font-bold uppercase tracking-widest text-xs">Upoznajte nas</h4>
+                <h2 class="font-serif text-4xl md:text-6xl text-on-surface leading-tight">Umjetnost u srcu Slavonije</h2>
+                <p class="text-stone-600 text-lg leading-relaxed">
+                    Svaka IRIS svijeća započinje život u našoj maloj obiteljskoj radionici u Našicama. Vjerujemo da dom nije samo mjesto, već osjećaj koji stvaraju detalji. 
+                </p>
+                <p class="text-stone-600 text-lg leading-relaxed font-light italic">
+                    "Koristimo isključivo 100% sojin vosak i ekološki prihvatljive fitilje, jer vaša pluća zaslužuju čistoću baš kao i vaš interijer."
+                </p>
+                <div class="pt-6">
+                    <a href="#proces" class="inline-flex items-center gap-3 text-primary font-bold uppercase tracking-widest text-xs border-b-2 border-primary pb-2 hover:gap-5 transition-all">
+                        Otkrijte proces izrade <span class="material-symbols-outlined">trending_flat</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kolekcije (Bento Grid) -->
+    <section id="kolekcije" class="py-32 bg-[#f6f3f2]">
+        <div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="font-serif text-4xl md:text-6xl mb-6">Naša Kolekcija</h2>
+                <p class="text-stone-500 max-w-2xl mx-auto italic">Pronađite savršen miris za svaku prostoriju vašeg doma.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                <!-- Glavna slika - Velika svijeća -->
+                <div class="md:col-span-8 group product-hover relative overflow-hidden rounded-3xl bg-white shadow-xl" data-aos="fade-up">
+                    <div class="aspect-[16/9] overflow-hidden">
+                        <img alt="Mirisne Svijeće" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?q=80&w=1200&auto=format&fit=crop"/>
+                    </div>
+                    <div class="p-10 flex justify-between items-end">
+                        <div>
+                            <h3 class="font-serif text-3xl mb-2">Signature Svijeće</h3>
+                            <p class="text-stone-400 uppercase tracking-widest text-[10px]">Premium Soy Wax Collection</p>
+                        </div>
+                        <button class="bg-stone-900 text-white px-8 py-4 rounded-full text-[10px] uppercase font-bold tracking-widest hover:bg-primary transition-colors">Saznaj više</button>
+                    </div>
+                </div>
+
+                <!-- Wax Melts -->
+                <div class="md:col-span-4 group product-hover relative overflow-hidden rounded-3xl bg-white shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="aspect-square overflow-hidden">
+                        <img alt="Wax Melts" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1605651202774-7d573fd3f12d?q=80&w=800&auto=format&fit=crop"/>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-serif text-2xl mb-2">Wax Melts</h3>
+                        <p class="text-stone-400 uppercase tracking-widest text-[10px]">Za mirisne lampe</p>
+                    </div>
+                </div>
+
+                <!-- Car Scents -->
+                <div class="md:col-span-4 group product-hover overflow-hidden rounded-3xl bg-white shadow-xl" data-aos="fade-up">
+                    <div class="aspect-square overflow-hidden">
+                        <img alt="Car Scent" class="w-full h-full object-cover" src="https://kraljdizajn.com/cdn/shop/products/mirisniboric.jpg?v=1677335211&width=1946"/>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="font-serif text-xl">Mirisi za auto</h3>
+                        <p class="text-stone-400 text-[10px] uppercase tracking-widest mt-2">Dugotrajna svježina</p>
+                    </div>
+                </div>
+
+                <!-- Gifts -->
+                <div class="md:col-span-4 group product-hover overflow-hidden rounded-3xl bg-white shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="aspect-square overflow-hidden">
+                        <img alt="Gift Sets" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?q=80&w=800&auto=format&fit=crop"/>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="font-serif text-xl">Poklon setovi</h3>
+                        <p class="text-stone-400 text-[10px] uppercase tracking-widest mt-2">Personalizirani paketi</p>
+                    </div>
+                </div>
+
+                <!-- Oils -->
+                <div class="md:col-span-4 group product-hover overflow-hidden rounded-3xl bg-white shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="aspect-square overflow-hidden">
+                        <img alt="Oils" class="w-full h-full object-cover" src="data:image/jpeg;base64,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"/>
+                    </div>
+                    <div class="p-8 text-center">
+                        <h3 class="font-serif text-xl">Eterična ulja</h3>
+                        <p class="text-stone-400 text-[10px] uppercase tracking-widest mt-2">100% Prirodni ekstrakti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proces Izrade -->
+    <section id="proces" class="py-32 bg-stone-950 text-white overflow-hidden">
+        <div class="max-w-screen-2xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row gap-24 items-center">
+            <div class="lg:w-1/2" data-aos="fade-right">
+                <span class="text-primary font-bold uppercase tracking-[0.4em] text-xs">Umijeće Izrade</span>
+                <h2 class="font-serif text-4xl md:text-6xl mt-6 mb-12 leading-[1.1]">Put od voska do čistog užitka</h2>
+                <div class="space-y-12">
+                    <div class="flex items-start gap-8" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 rounded-full border border-primary/50 flex items-center justify-center shrink-0 font-serif text-primary">1</div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-2">Vrhunski sastojci</h4>
+                            <p class="text-stone-400 leading-relaxed">Koristimo isključivo biorazgradivi sojin vosak koji ne ispušta čađu i gori do 50% dulje od parafina.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-8" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 rounded-full border border-primary/50 flex items-center justify-center shrink-0 font-serif text-primary">2</div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-2">Ručno lijevanje</h4>
+                            <p class="text-stone-400 leading-relaxed">Svaka svijeća se lijeva ručno u malim serijama kako bi se osigurala savršena distribucija mirisa.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-8" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-12 h-12 rounded-full border border-primary/50 flex items-center justify-center shrink-0 font-serif text-primary">3</div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-2">Vrijeme sazrijevanja</h4>
+                            <p class="text-stone-400 leading-relaxed">Naše svijeće "odmaraju" 14 dana kako bi se molekule mirisa i voska potpuno sjedinile.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 grid grid-cols-2 gap-6" data-aos="fade-left">
+                <!-- Slike procesa -->
+                <img alt="Melting wax" class="rounded-3xl w-full h-full object-cover translate-y-12 shadow-2xl" src="https://images.unsplash.com/photo-1602873145311-bf3936612093?q=80&w=600&auto=format&fit=crop"/>
+                <img alt="Finished product" class="rounded-3xl w-full h-full object-cover shadow-2xl" src="https://images.unsplash.com/photo-1612198526331-89569733e831?q=80&w=600&auto=format&fit=crop"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt & Karta -->
+    <section id="kontakt" class="py-32 bg-white">
+        <div class="max-w-screen-2xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div data-aos="fade-up">
+                <h2 class="font-serif text-4xl md:text-6xl mb-8">Započnimo razgovor</h2>
+                <p class="text-stone-500 mb-12 text-lg">Zanima vas suradnja, veleprodaja ili personalizirani darovi? Pišite nam s povjerenjem.</p>
+                
+                <form class="space-y-8" onsubmit="event.preventDefault(); alert('Hvala na poruci! Javit ćemo se uskoro.');">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <input class="w-full bg-stone-50 border-0 border-b border-stone-200 focus:ring-0 focus:border-primary py-4 px-4 rounded-t-xl" placeholder="Vaše Ime" type="text" required/>
+                        <input class="w-full bg-stone-50 border-0 border-b border-stone-200 focus:ring-0 focus:border-primary py-4 px-4 rounded-t-xl" placeholder="Email Adresa" type="email" required/>
+                    </div>
+                    <textarea class="w-full bg-stone-50 border-0 border-b border-stone-200 focus:ring-0 focus:border-primary py-4 px-4 rounded-t-xl" placeholder="Vaša Poruka" rows="5"></textarea>
+                    <button class="primary-gradient text-white px-12 py-5 rounded-full text-[10px] uppercase font-bold tracking-[0.2em] shadow-xl hover:scale-105 transition-all w-full md:w-auto" type="submit">Pošalji upit</button>
+                </form>
+            </div>
+            
+            <div class="space-y-8" data-aos="fade-up" data-aos-delay="200">
+                <!-- Prava Google Maps karta Našica -->
+                <div class="h-[450px] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-stone-100 grayscale-[0.8] hover:grayscale-0 transition-all duration-1000">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.614838426!2d18.086438315560!3d45.491388979101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475da1978249699b%3A0x400ad50862bb000!2zTmHFocWpY2U!5e0!3m2!1shr!2shr!4v1715000000000!5m2!1shr!2shr" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="grid grid-cols-2 gap-8 text-sm">
+                    <div>
+                        <h5 class="font-bold uppercase tracking-widest text-[10px] mb-3 text-primary">Lokacija</h5>
+                        <p class="text-stone-500 font-medium">31500 Našice, Hrvatska</p>
+                    </div>
+                    <div>
+                        <h5 class="font-bold uppercase tracking-widest text-[10px] mb-3 text-primary">Kontakt</h5>
+                        <p class="text-stone-500 font-medium">info@iriscandleart.hr<br/>+385 31 835 004</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-stone-900 text-white py-24">
+    <div class="max-w-screen-2xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-16">
+        <div class="md:col-span-2">
+            <h2 class="font-serif text-3xl mb-8 tracking-tighter">IRIS CANDLE ART</h2>
+            <p class="text-stone-400 max-w-sm text-sm leading-relaxed mb-8">
+                Posvećeni smo stvaranju mirisnih iskustava koja poštuju prirodu i vaš prostor. S ljubavlju iz Slavonije.
+            </p>
+            <div class="flex gap-4">
+                <a href="#" class="w-12 h-12 rounded-full border border-stone-800 flex items-center justify-center hover:bg-white hover:text-stone-900 transition-all"><span class="material-symbols-outlined text-sm">photo_camera</span></a>
+                <a href="#" class="w-12 h-12 rounded-full border border-stone-800 flex items-center justify-center hover:bg-white hover:text-stone-900 transition-all"><span class="material-symbols-outlined text-sm">facebook</span></a>
+            </div>
+        </div>
+        <div class="flex flex-col space-y-4">
+            <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-2">Navigacija</h5>
+            <a href="#kolekcije" class="text-stone-400 hover:text-white transition-colors text-sm">Shop</a>
+            <a href="#o-nama" class="text-stone-400 hover:text-white transition-colors text-sm">O nama</a>
+            <a href="#proces" class="text-stone-400 hover:text-white transition-colors text-sm">Proces</a>
+            <a href="#kontakt" class="text-stone-400 hover:text-white transition-colors text-sm">Kontakt</a>
+        </div>
+        <div class="flex flex-col space-y-4">
+            <h5 class="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-2">Informacije</h5>
+            <p class="text-stone-400 text-sm">Veleprodaja</p>
+            <p class="text-stone-400 text-sm">Dostava i povrati</p>
+            <p class="text-stone-400 text-sm">Pravila privatnosti</p>
+        </div>
+    </div>
+    <div class="max-w-screen-2xl mx-auto px-6 mt-24 pt-8 border-t border-stone-800 text-center">
+        <p class="text-[10px] tracking-widest text-stone-500 uppercase">
+            © 2024 IRIS CANDLE ART. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<!-- AOS Animation Library JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+        once: true,
+        offset: 150,
+        easing: 'ease-out-cubic'
+    });
+
+    // Skrol efekt za zaglavlje
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('py-3', 'shadow-xl');
+            header.classList.remove('py-5');
+        } else {
+            header.classList.add('py-5');
+            header.classList.remove('py-3', 'shadow-xl');
+        }
+    });
+</script>
+
+</body>
 </html>
